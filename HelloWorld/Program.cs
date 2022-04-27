@@ -23,3 +23,23 @@ Console.WriteLine(carObj2.Owner);
 
 carObj2.Fuel = 80;
 Console.WriteLine(carObj2.Fuel);
+
+bool repeat = true;
+while (repeat)
+{
+    string answer = Console.ReadLine();
+    if (answer == "")
+    {
+
+
+    }
+    else if (answer == "Exit")
+    {
+        repeat = false;
+    }
+    else
+    }
+    {
+
+    }
+}
