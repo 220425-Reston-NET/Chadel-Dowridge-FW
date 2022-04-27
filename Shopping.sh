@@ -2,8 +2,11 @@
 #read name # Read [wahtever variable name you specify] will store the user input in that variable
 
 repeat="true"
+sum=0
 
 while [ "$repeat" == "true" ]
+do
+	echo "Welcome to The Market"
 	echo "Enter 1 for Shopping List?"
 	echo "Enter 2 to exit"
 	read answer
@@ -22,12 +25,14 @@ then
 	read choice
 	if [ "$choice" == "1" ]
 	then
-		echo "Bread:2"
+		echo "Bread: 2"
 		sum=$(($sum+2))
+
 	elif [ "$choice" == "2" ]
 	then
         	echo "Cheese:3"
 		sum=$(($sum+2))
+
 	elif [ "$choice" == "3" ]
 	then
         	echo "Milk:3"
@@ -45,8 +50,8 @@ then
 
 	elif [ "$choice" == "6" ]
         then
-                echo "Your total is $ $sum"
-                repeat="false"
+              echo "Your total is $ $sum"
+              repeat="false"
 	else
 		echo "Choose vaild answer"
 	fi
@@ -54,9 +59,9 @@ then
 
 elif [ "$answer" == "2" ]
 then
-	repeat= "false"
+	repeat="false"
 else
-	echo "Please enter a correct option"
-fi
-
+	echo "Enter a correct option"
+fi 
 done
+
